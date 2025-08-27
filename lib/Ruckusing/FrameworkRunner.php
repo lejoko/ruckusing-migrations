@@ -107,7 +107,7 @@ class Ruckusing_FrameworkRunner
      *
      * @return Ruckusing_FrameworkRunner
      */
-    public function __construct($config, $argv, Ruckusing_Util_Logger $log = null)
+    public function __construct($config, $argv, ?Ruckusing_Util_Logger $log = null)
     {
         set_error_handler(array('Ruckusing_Exception', 'errorHandler'), E_ALL);
         set_exception_handler(array('Ruckusing_Exception', 'exceptionHandler'));
