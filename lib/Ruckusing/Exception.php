@@ -48,7 +48,7 @@ class Ruckusing_Exception extends Exception
      *
      * @return Ruckusing_Exception
      */
-    public function __construct($message, $code = 0, Exception $previous = null)
+    public function __construct($message, $code = 0, ?Exception $previous = null)
     {
         // make sure everything is assigned properly
         if (version_compare(PHP_VERSION, '5.3.0', '>=')) {
